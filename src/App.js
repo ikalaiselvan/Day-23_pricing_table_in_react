@@ -75,9 +75,13 @@ function App() {
       <section className="pricing py-5">
         <div className="container">
           <div className="row">
-          <Pricing data={data[0]}/>
-          <Pricing data={data[1]}/>
-          <Pricing data={data[2]}/>
+
+            {data.map((e)=>(
+              <Pricing data={e}/>
+            ))}
+            
+          {/* <Pricing data={data[1]}/>
+          <Pricing data={data[2]}/> */}
           </div>
         </div>
       </section>
